@@ -1,0 +1,55 @@
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: #ccc;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.imgBox {
+  background: var(--primary);
+  text-align: center;
+  padding: 1rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.ImgContainer {
+  display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+
+.box img {
+  width: 100%;
+}
+ .box.light-bg {
+   background: #EEE;
+ }
